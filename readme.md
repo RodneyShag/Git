@@ -140,3 +140,5 @@ Here's [another Reference](https://stackoverflow.com/questions/1911109/how-to-cl
 __"Checkout" or "Pull" not working__
 
 Common mistake is to modify files on local machine, and then try to do a "checkout" or "pull". Problem is the checkout/pull will overwrite what we have. If we do want to OVERWRITE our files, we can erase our changes by typing `git reset --hard HEAD`. Then we can checkout/pull without problems, which gets us the remote files.
+
+##git basic commands
