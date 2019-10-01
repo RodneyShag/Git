@@ -1,7 +1,7 @@
 <p align="center">
     <a href="http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf">
     <img src="images/git_logo.png">
-    <br><br>[Git Cheatsheet](http://files.zeroturnaround.com/pdf/zt_git_cheat_sheet.pdf)
+    <br><br>Git Cheatsheet
     </a>
 </p>
 
