@@ -26,7 +26,7 @@ All commands should be run without the <> brackets
 - `git checkout -b develop` checks out a new branch called "develop"
     - `git checkout init_devices` switches branch to _init_devices_
     - `git checkout <commit_number>` goes to a specific commit
-- `git status` shows differences between local files and remote files
+- `git status` lists new or modified files not yet committed
 - `git diff <commit_number>` compares current code to any commit
 - `git add *` adds all files to "Staging". Ready for commit
     - `git add <file>` adds a specific file to "Staging". Ready for commit.
@@ -62,7 +62,7 @@ All commands should be run without the <> brackets
 
 ## Submit changes
 
-1. `git status` - to see what's modified
+1. `git status` to list new or modified files not yet committed
 1. `git add <file>`
 1. `git commit -m "<commit message>"`
 1. `git push` to push the code to the repository. If it fails since code needs to be pulled first, do:
