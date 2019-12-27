@@ -26,6 +26,7 @@ All commands should be run without the <> brackets
 - `git checkout -b develop` checks out a new branch called "develop"
     - `git checkout init_devices` switches branch to _init_devices_
     - `git checkout <commit_number>` goes to a specific commit
+    - `git checkout -b 1234 origin/mainline` checks out a new branch called "1234", that "tracks" origin/mainline, meaning "local branch has its upstream set to a remote branch" ([Reference](https://stackoverflow.com/questions/10002239/difference-between-git-checkout-track-origin-branch-and-git-checkout-b-branch)). Here's more info: [Tracking branches](https://stackoverflow.com/questions/4693588/what-is-a-tracking-branch)
 - `git status` lists new or modified files not yet committed
 - `git diff <commit_number>` compares current code to any commit
 - `git add *` adds all files to "Staging". Ready for commit
@@ -38,7 +39,6 @@ All commands should be run without the <> brackets
     - `git push origin <my_branch>` pushes to specific branch. I think origin is a keyword.
  [Reference](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches)
 - `git pull` pulls all changed files
-
 
 ## More commands
 
@@ -119,20 +119,6 @@ __Stash topmost commit__
 To merge 1 branch into another, "giving branch", and do a `git pull`. Then go to receiving branch, and run 1 of the following merge commands:
 - `git merge <branch_name>` - Run this from receiving branch. More info [here](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - `git merge <commit_number_from_another_branch>` - Merges another branch (up to the commit number) into this branch.
-
-
-## Create a new branch and upstream it
-
-#### Solution 1
-
-1. [Copy the branch](https://stackoverflow.com/a/14998980)
-1. `git push -u origin Icon_farm_v2` to "upstream" the branch to code.amazon.com
-
-Here's [another Reference](https://stackoverflow.com/questions/1911109/how-to-clone-a-specific-git-branch)
-
-#### Solution 2 (newer)
-
-`git checkout -b [name_of_your_new_branch]` to create a local branch. [Link](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 
 
 ## Troubleshoot
