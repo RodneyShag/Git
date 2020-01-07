@@ -70,6 +70,13 @@ All commands should be run without the <> brackets
     1. `git push`
 
 
+## Revert changes
+
+1. `git revert <commit_number>`
+1. then `:wq` to save in VIM
+1. then rebase
+
+
 ## Rebase
 
 #### Rebasing with Merge Conflicts
@@ -91,13 +98,6 @@ Somewhat useful [tutorial for git pull](https://www.atlassian.com/git/tutorials/
 1. If not on latest commit, do a `git pull --rebase`. Note: this command doesn't create a merge commit, so it makes other people's code diverge from what they had.
 
 
-## Revert changes
-
-1. `git revert <commit_number>`
-1. then `:wq` to save in VIM
-1. then rebase
-
-
 ## Stashing
 
 - `git stash` - moves your changes to a stash (a location where changes can be saved)
@@ -111,7 +111,7 @@ Somewhat useful [tutorial for git pull](https://www.atlassian.com/git/tutorials/
 __Stash topmost commit__
 
 1. `git reset HEAD^` - basically like an uncommit
-1. `git stash`
+1. `git stash` (this may not stash new files. Maybe try "tracking" the new files to see if this works)
 
 
 ## Merge Branch
