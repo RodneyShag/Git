@@ -116,7 +116,7 @@ __Stash topmost commit__
 
 ## Merge Branch
 
-To merge 1 branch into another, "giving branch", and do a `git pull`. Then go to receiving branch, and run 1 of the following merge commands:
+To merge 1 branch into another, go to the "giving branch" and do a `git pull`. Then go to receiving branch, and run 1 of the following merge commands:
 - `git merge <branch_name>` - Run this from receiving branch. More info [here](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - `git merge <commit_number_from_another_branch>` - Merges another branch (up to the commit number) into this branch.
 
@@ -126,3 +126,7 @@ To merge 1 branch into another, "giving branch", and do a `git pull`. Then go to
 __"Checkout" or "Pull" not working__
 
 Common mistake is to modify files on local machine, and then try to do a "checkout" or "pull". Problem is the checkout/pull will overwrite what we have. If we do want to OVERWRITE our files, we can erase our changes by typing `git reset --hard HEAD`. Then we can checkout/pull without problems, which gets us the remote files.
+
+## Links
+
+[Fun way to learn git](https://learngitbranching.js.org)
