@@ -14,7 +14,6 @@
 - [Revert changes](#revert-changes)
 - [Stashing](#stashing)
 - [Merge branch](#merge-branch)
-- [Create a new branch and upstream it](#create-a-new-branch-and-upstream-it)
 - [Troubleshoot](#troubleshoot)
 
 ## Common Commands
@@ -39,6 +38,7 @@ All commands should be run without the <> brackets
     - `git push origin <my_branch>` pushes to specific branch. I think origin is a keyword.
  [Reference](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches)
 - `git pull` pulls all changed files
+- `git cherry-pick <commit_number>` adds a specific commit to your branch
 
 ## More commands
 
@@ -119,6 +119,12 @@ __Stash topmost commit__
 To merge 1 branch into another, go to the "giving branch" and do a `git pull`. Then go to receiving branch, and run 1 of the following merge commands:
 - `git merge <branch_name>` - Run this from receiving branch. More info [here](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - `git merge <commit_number_from_another_branch>` - Merges another branch (up to the commit number) into this branch.
+
+
+## Create new branch and upstream it
+
+- `git checkout -b myNewBranch` - creates branch
+- `git push --set-upstream origin myNewBranch` - [tells the remote server that a new branch has been created locally, so that it can recreate the same branch](https://www.datree.io/resources/git-create-branch)
 
 
 ## Troubleshoot
